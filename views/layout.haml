@@ -1,0 +1,33 @@
+!!!
+%html
+  %head
+    %meta{charset: "utf-8"}
+    %meta{"http-equiv" => "X-UA-Compatible", content: "IE=edge"}
+    %title My Test Application
+    %link{href: "favicon.ico", rel: "icon", type: "image/x-icon"}
+    %link{ :rel => "stylesheet", :href => "/path/from/assets/application.css" }
+
+  %body
+    %header
+      %section
+        %h1 Logo Here
+        %h2 and a tagline
+
+        %nav
+          %ul
+            %li
+              %a{:href => "#my-link"} Link
+            %li
+              %a{:href => "#my-link"} Link
+            %li
+              %a{:href => "#my-link"} Link
+            %li
+              %a{:href => "#my-link"} Link
+
+    #content= yield
+
+    %footer
+      %section
+        %p= "© #{Date.today.strftime("%Y")} Test App"
+
+    %script{:type => "text/javascript", :src  => "/path/from/assets/application.js"}
