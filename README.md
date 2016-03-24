@@ -16,7 +16,7 @@ And put together this.
 
 ## How
 
-We have latest sprockets (without the entire rails dependencies), and can use gem assets (like bootstrap) or Rails Assets Bower wrapping (like jquery).
+We have latest sprockets (without the entire rails dependencies), and can use gem assets (like bootstrap) or the awesome [Torba](https://github.com/torba-rb/torba) for GitHub releases, Zip Files, Tar.gz files and **NPM PACKAGES** (like jquery on the example).
 
 ## Todo
 

@@ -14,6 +14,4 @@ gem 'bootstrap-sass', '~> 3.3.6'
 
 gem 'uglifier'
 
-source 'https://rails-assets.org' do
-  gem 'rails-assets-jquery'
-end
+gem 'torba', require: false

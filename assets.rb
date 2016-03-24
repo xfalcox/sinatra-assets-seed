@@ -1,10 +1,12 @@
+require 'torba'
+
 class Assets < Sinatra::Base
   configure do
     set :assets, assets = (Sprockets::Environment.new { |env|
       env.append_path(settings.root + "/assets/images")
       env.append_path(settings.root + "/assets/stylesheets")
       env.append_path(settings.root + "/assets/javascripts")
-      RailsAssets.load_paths.each do |path|
+      Torba.load_path.each do |path|
         env.append_path(path)
       end
     })
